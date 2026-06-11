@@ -1,33 +1,57 @@
 [
   {
-  "question": "What is the Kaaba?",
-  "image": "images/kaaba.jpg",
-  "choices": [
-      "Paris",
-      "Amazing",
-      "Berlin",
-      "Rome"
+    "question": "WHow old was Prophet Muhammad when the Qur’an was first revealed to him?",
+    "image": "",
+    "choices": [
+      "40 years old",
+      "34 years old",
+      "37 years old",
+      "31 years old"
     ],
-    "answer": "Amazing"
+    "answer": "40 yearsold"
   },
   {
-    "question": "What is the capital of France?",
+    "question": "Which prophet’s story is mentioned most in the Qur’an?",
+    "image": "",
     "choices": [
-      "Paris",
-      "London",
-      "Berlin",
-      "Rome"
+      "Prophet Mūsā",
+      "Prophet Isa",
+      "Prophet Yusuf",
+      "Prophet Ibrahim"
     ],
-    "answer": "Paris"
+    "answer": "Prophet Mūsā"
   },
   {
-    "question": "Which ocean is the largest?",
+    "question": "Where did Prophet Nuh’s Ark rest after the flood?",
+    "image": "",
     "choices": [
-      "Atlantic Ocean",
-      "Indian Ocean",
-      "Pacific Ocean",
-      "Arctic Ocean"
+      "Mount Sinai",
+      "Mount Judi",
+      "Mount Ararat",
+      "Mount Vesuvius"
     ],
-    "answer": "Pacific Ocean"
+    "answer": "Mount Judi"
+  },
+  {
+    "question": "Whose generation is known as 'Bani Israeel' in the Qur’an?",
+    "image": "",
+    "choices": [
+      "Prophet Ibrahim",
+      "Prophet Yaqub",
+      "Prophet Musa",
+      "Prophet Lut"
+    ],
+    "answer": "Prophet Yaqub"
+  },
+  {
+    "question": "Only one of the Companions was mentioned by name in the Qur’an. What was his name?",
+    "image": "",
+    "choices": [
+      "Umar ibn Al-Khattab",
+      "Zaid bin Harithah",
+      "Ali ibn Abi Talib",
+      "Abu Bakr As-Siddiq"
+    ],
+    "answer": "Zaid bin Harithah"
   }
 ]
