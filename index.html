@@ -1,24 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Trivia Game</title>
+    <title>Islamic Trivia</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="game">
-        <h1>Trivia Challenge</h1>
+<div class="container">
 
-        <div id="question"></div>
+    <h1>Islamic Trivia</h1>
 
-        <button onclick="answer('A')" id="btnA"></button>
-        <button onclick="answer('B')" id="btnB"></button>
-        <button onclick="answer('C')" id="btnC"></button>
-        <button onclick="answer('D')" id="btnD"></button>
+    <div id="menu">
+        <button onclick="startGame('history')">History</button>
+        <button onclick="startGame('geography')">Geography</button>
+    </div>
+
+    <div id="game" style="display:none;">
+        <h2 id="questionNumber"></h2>
+
+        <p id="questionText"></p>
+
+        <input
+            type="text"
+            id="answerInput"
+            placeholder="Enter your answer">
+
+        <button onclick="submitAnswer()">Submit</button>
+
+        <p id="feedback"></p>
 
         <p>Score: <span id="score">0</span></p>
     </div>
 
-    <script src="script.js"></script>
+</div>
+
+<script src="script.js"></script>
+
 </body>
 </html>
