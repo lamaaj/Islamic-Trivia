@@ -1,14 +1,22 @@
 [
   {
     "question": "What is the capital of France?",
+    "choices": [
+      "Paris",
+      "London",
+      "Berlin",
+      "Rome"
+    ],
     "answer": "Paris"
   },
   {
-    "question": "Which continent is Egypt located on?",
-    "answer": "Africa"
-  },
-  {
-    "question": "What is the largest ocean on Earth?",
+    "question": "Which ocean is the largest?",
+    "choices": [
+      "Atlantic Ocean",
+      "Indian Ocean",
+      "Pacific Ocean",
+      "Arctic Ocean"
+    ],
     "answer": "Pacific Ocean"
   }
 ]
