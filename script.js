@@ -1,18 +1,36 @@
 let quizData = [];
 let currentQuestion = 0;
 let score = 0;
+let wrongAnswers = []; // track missed questions for results screen
 
-// Load selected category
+const MAX_QUESTIONS = 20;
+
+// --------------------------- Load selected category
+
 async function startGame(category) {
 
-    const response = await fetch(`data/${category}.json`);
-    quizData = await response.json();
+    // Fix 3: try/catch around fetch so a missing file shows a clear error
+    try {
+        const response = await fetch(`data/${category}.json`);
 
-    // Shuffle questions
+        if (!response.ok) {
+            throw new Error(`Could not load "${category}" questions (${response.status})`);
+        }
+
+        quizData = await response.json();
+
+    } catch (err) {
+        alert(`Failed to load questions: ${err.message}`);
+        return;
+    }
+
+    // Shuffle, then cap at MAX_QUESTIONS
     quizData.sort(() => Math.random() - 0.5);
+    quizData = quizData.slice(0, MAX_QUESTIONS);
 
     currentQuestion = 0;
     score = 0;
+    wrongAnswers = [];
 
     document.getElementById("menu").style.display = "none";
     document.getElementById("game").style.display = "block";
@@ -20,83 +38,71 @@ async function startGame(category) {
     loadQuestion();
 }
 
-// ---------------------------  Display Questions
-
+// --------------------------- Display Questions
 
 function loadQuestion() {
-  
+
     const question = quizData[currentQuestion];
 
     document.getElementById("questionNumber").textContent =
-        `Question ${currentQuestion + 1}`;
+        `Question ${currentQuestion + 1} of ${quizData.length}`;
 
     document.getElementById("questionText").textContent =
         question.question;
 
-    const choicesContainer =
-        document.getElementById("choices");
-
+    // Fix 1: #choices div now exists in HTML — populate it with buttons
+    const choicesContainer = document.getElementById("choices");
     choicesContainer.innerHTML = "";
 
     question.choices.forEach(choice => {
 
-        const button =
-            document.createElement("button");
-
+        const button = document.createElement("button");
         button.textContent = choice;
-
-        button.onclick = () =>
-            checkAnswer(choice);
-
+        button.onclick = () => checkAnswer(choice);
         choicesContainer.appendChild(button);
     });
 
     document.getElementById("feedback").textContent = "";
 }
 
-
-// ---------------------------  Check Answers
-
-const buttons = document.querySelectorAll("#choices button"); // disbale clicking multiple answers
-
-buttons.forEach(button => {
-    button.disabled = true;
-});
-
+// --------------------------- Check Answers
 
 function checkAnswer(selectedAnswer) {
 
     const question = quizData[currentQuestion];
+    const feedback = document.getElementById("feedback");
 
-    const feedback =
-        document.getElementById("feedback");
+    // Fix 2: disable all choice buttons immediately on first click
+    //         (previously this ran at page load before buttons existed)
+    const buttons = document.querySelectorAll("#choices button");
+    buttons.forEach(button => button.disabled = true);
 
     if (selectedAnswer === question.answer) {
 
         score++;
-
-        feedback.textContent =
-            "Correct!";
+        feedback.textContent = "Correct!";
 
     } else {
 
-        feedback.textContent =
-            `Incorrect. Correct answer: ${question.answer}`;
+        feedback.textContent = `Incorrect. Correct answer: ${question.answer}`;
+
+        // Save missed question for results screen
+        wrongAnswers.push({
+            question: question.question,
+            yourAnswer: selectedAnswer,
+            correctAnswer: question.answer
+        });
     }
 
-    document.getElementById("score").textContent =
-        score;
+    document.getElementById("score").textContent = score;
 
     currentQuestion++;
 
     setTimeout(() => {
 
         if (currentQuestion < quizData.length) {
-
             loadQuestion();
-
         } else {
-
             endGame();
         }
 
@@ -105,19 +111,34 @@ function checkAnswer(selectedAnswer) {
 
 // --------------------------- End Game
 
-
 function endGame() {
 
-    document.getElementById("game").innerHTML = `
-        <h2>Quiz Complete!</h2>
+    // Hide game, show dedicated results screen (no longer nukes #game div)
+    document.getElementById("game").style.display = "none";
+    document.getElementById("results").style.display = "block";
 
-        <p>
-            Final Score:
-            ${score} / ${quizData.length}
-        </p>
+    document.getElementById("finalScore").textContent =
+        `You scored ${score} out of ${quizData.length}.`;
 
-        <button onclick="location.reload()">
-            Play Again
-        </button>
-    `;
+    const wrongContainer = document.getElementById("wrongAnswers");
+    wrongContainer.innerHTML = "";
+
+    if (wrongAnswers.length === 0) {
+
+        wrongContainer.innerHTML = "<p>Perfect score — no missed questions!</p>";
+
+    } else {
+
+        wrongAnswers.forEach(item => {
+
+            const div = document.createElement("div");
+            div.className = "wrong-answer";
+            div.innerHTML = `
+                <p><strong>Q:</strong> ${item.question}</p>
+                <p><strong>Your answer:</strong> ${item.yourAnswer}</p>
+                <p><strong>Correct answer:</strong> ${item.correctAnswer}</p>
+            `;
+            wrongContainer.appendChild(div);
+        });
+    }
 }
