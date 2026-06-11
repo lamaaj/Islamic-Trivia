@@ -1,7 +1,7 @@
 let quizData = [];
 let currentQuestion = 0;
 let score = 0;
-let wrongAnswers = []; // track missed questions for results screen
+let wrongAnswers = [];
 
 const MAX_QUESTIONS = 20;
 
@@ -9,7 +9,6 @@ const MAX_QUESTIONS = 20;
 
 async function startGame(category) {
 
-    // Fix 3: try/catch around fetch so a missing file shows a clear error
     try {
         const response = await fetch(`data/${category}.json`);
 
@@ -44,13 +43,21 @@ function loadQuestion() {
 
     const question = quizData[currentQuestion];
 
+    // Update progress bar
+    const progressPercent = (currentQuestion / quizData.length) * 100;
+    document.getElementById("progressBar").style.width = progressPercent + "%";
+
     document.getElementById("questionNumber").textContent =
         `Question ${currentQuestion + 1} of ${quizData.length}`;
+
+    // Swap question image
+    const img = document.getElementById("questionImage");
+    img.src = question.image;
+    img.alt = question.question;
 
     document.getElementById("questionText").textContent =
         question.question;
 
-    // Fix 1: #choices div now exists in HTML — populate it with buttons
     const choicesContainer = document.getElementById("choices");
     choicesContainer.innerHTML = "";
 
@@ -72,8 +79,7 @@ function checkAnswer(selectedAnswer) {
     const question = quizData[currentQuestion];
     const feedback = document.getElementById("feedback");
 
-    // Fix 2: disable all choice buttons immediately on first click
-    //         (previously this ran at page load before buttons existed)
+    // Disable all buttons on first click to prevent multiple answers
     const buttons = document.querySelectorAll("#choices button");
     buttons.forEach(button => button.disabled = true);
 
@@ -86,9 +92,9 @@ function checkAnswer(selectedAnswer) {
 
         feedback.textContent = `Incorrect. Correct answer: ${question.answer}`;
 
-        // Save missed question for results screen
         wrongAnswers.push({
             question: question.question,
+            image: question.image,
             yourAnswer: selectedAnswer,
             correctAnswer: question.answer
         });
@@ -113,7 +119,9 @@ function checkAnswer(selectedAnswer) {
 
 function endGame() {
 
-    // Hide game, show dedicated results screen (no longer nukes #game div)
+    // Fill progress bar to 100% when done
+    document.getElementById("progressBar").style.width = "100%";
+
     document.getElementById("game").style.display = "none";
     document.getElementById("results").style.display = "block";
 
@@ -134,6 +142,7 @@ function endGame() {
             const div = document.createElement("div");
             div.className = "wrong-answer";
             div.innerHTML = `
+                <img src="${item.image}" alt="${item.question}">
                 <p><strong>Q:</strong> ${item.question}</p>
                 <p><strong>Your answer:</strong> ${item.yourAnswer}</p>
                 <p><strong>Correct answer:</strong> ${item.correctAnswer}</p>
