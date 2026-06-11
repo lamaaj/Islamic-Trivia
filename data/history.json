@@ -2,8 +2,14 @@
   {
   "question": "What is the Kaaba?",
   "image": "images/kaaba.jpg",
-  "choices": ["...", "..."],
-  "answer": "..."
+  "choices": [
+      "Paris",
+      "Amazing",
+      "Berlin",
+      "Rome"
+    ],
+    "answer": "Amazing"
+  },
 }
   {
     "question": "What is the capital of France?",
