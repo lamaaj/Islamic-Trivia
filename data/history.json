@@ -1,5 +1,11 @@
 [
   {
+  "question": "What is the Kaaba?",
+  "image": "images/kaaba.jpg",
+  "choices": ["...", "..."],
+  "answer": "..."
+}
+  {
     "question": "What is the capital of France?",
     "choices": [
       "Paris",
