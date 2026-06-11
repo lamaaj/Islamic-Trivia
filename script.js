@@ -32,6 +32,8 @@ async function startGame(category) {
     wrongAnswers = [];
 
     document.getElementById("menu").style.display = "none";
+    document.getElementById("menuHeader").style.display = "none";
+    document.getElementById("menuImage").style.display = "none";
     document.getElementById("game").style.display = "block";
 
     loadQuestion();
