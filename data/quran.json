@@ -1,7 +1,7 @@
 [
   {
     "question": "How old was Prophet Muhammad when the Qur’an was first revealed to him?",
-    "image": "images/kaaba.jpg",
+    "image": "images/quran/quran.jpg",
     "choices": [
       "40 years old",
       "34 years old",
@@ -12,7 +12,7 @@
   },
   {
     "question": "Which prophet’s story is mentioned most in the Qur’an?",
-    "image": "images/kaaba.jpg",
+    "image": "images/quran/quran.jpg",
     "choices": [
       "Prophet Mūsā",
       "Prophet Isa",
@@ -23,7 +23,7 @@
   },
   {
     "question": "Only one of the Companions was mentioned by name in the Qur’an. What was his name?",
-    "image": "images/main.jpg",
+    "image": "images/quran/quran.jpg",
     "choices": [
       "Umar ibn Al-Khattab",
       "Zaid bin Harithah",
