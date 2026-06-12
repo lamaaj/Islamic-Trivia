@@ -12,7 +12,7 @@
   },
   {
     "question": "Which prophet’s story is mentioned most in the Qur’an?",
-    "image": "",
+    "image": "images/kaaba.jpg"",
     "choices": [
       "Prophet Mūsā",
       "Prophet Isa",
@@ -23,7 +23,7 @@
   },
   {
     "question": "Where did Prophet Nuh’s Ark rest after the flood?",
-    "image": "",
+    "image": "images/sky.jpg",
     "choices": [
       "Mount Sinai",
       "Mount Judi",
@@ -34,7 +34,7 @@
   },
   {
     "question": "Whose generation is known as 'Bani Israeel' in the Qur’an?",
-    "image": "",
+    "image": "images/main.jpg",
     "choices": [
       "Prophet Ibrahim",
       "Prophet Yaqub",
@@ -45,7 +45,7 @@
   },
   {
     "question": "Only one of the Companions was mentioned by name in the Qur’an. What was his name?",
-    "image": "",
+    "image": "images/main.jpg"",
     "choices": [
       "Umar ibn Al-Khattab",
       "Zaid bin Harithah",
