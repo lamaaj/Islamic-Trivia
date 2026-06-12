@@ -144,7 +144,6 @@ function endGame() {
             const div = document.createElement("div");
             div.className = "wrong-answer";
             div.innerHTML = `
-                <img src="${item.image}" alt="${item.question}">
                 <p><strong>Q:</strong> ${item.question}</p>
                 <p><strong>Your answer:</strong> ${item.yourAnswer}</p>
                 <p><strong>Correct answer:</strong> ${item.correctAnswer}</p>
