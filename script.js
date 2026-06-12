@@ -3,7 +3,7 @@ let currentQuestion = 0;
 let score = 0;
 let wrongAnswers = [];
 
-const MAX_QUESTIONS = 20;
+const MAX_QUESTIONS = 10;
 
 // --------------------------- Load selected category
 
