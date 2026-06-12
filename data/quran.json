@@ -1,1 +1,35 @@
-Quran.txt
+[
+  {
+    "question": "How old was Prophet Muhammad when the Qur’an was first revealed to him?",
+    "image": "images/kaaba.jpg",
+    "choices": [
+      "40 years old",
+      "34 years old",
+      "37 years old",
+      "31 years old"
+    ],
+    "answer": "40 years old"
+  },
+  {
+    "question": "Which prophet’s story is mentioned most in the Qur’an?",
+    "image": "images/kaaba.jpg",
+    "choices": [
+      "Prophet Mūsā",
+      "Prophet Isa",
+      "Prophet Yusuf",
+      "Prophet Ibrahim"
+    ],
+    "answer": "Prophet Mūsā"
+  },
+  {
+    "question": "Only one of the Companions was mentioned by name in the Qur’an. What was his name?",
+    "image": "images/main.jpg",
+    "choices": [
+      "Umar ibn Al-Khattab",
+      "Zaid bin Harithah",
+      "Ali ibn Abi Talib",
+      "Abu Bakr As-Siddiq"
+    ],
+    "answer": "Zaid bin Harithah"
+  }
+]
