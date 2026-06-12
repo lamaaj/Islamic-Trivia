@@ -14,7 +14,7 @@
   {
     "question": "Only one of the Companions was mentioned by name in the Qur’an. What was his name?",
     "image": "images/quran/quran.jpg",
-    "choices": ["Umar ibn Al-Khattab", "Zaid bin Harithah", "Ali ibn Abi Talib", "Abu Bakr As-Siddiq"],
+    "choices": ["Umar ibn Al-Khattab", "Zaid bin Harithah", "Ali ibn Abi Talib", "Abu Bakr"],
     "answer": "Zaid bin Harithah"
   }
 ]
