@@ -34,9 +34,8 @@ input {
     transition: width 0.4s ease;
     }
 #questionImage {
-    width: 100%;
-    max-height: 250px;
-    object-fit: cover;
+    width: 1018px;
+    height: 573px;
     border-radius: 8px;
     margin-bottom: 12px;
     }
