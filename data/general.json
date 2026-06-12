@@ -1,7 +1,7 @@
 [
   {
     "question": "Where did Prophet Nuh’s Ark rest after the flood?",
-    "image": "images/sky.jpg",
+    "image": "images/general/sky.jpg",
     "choices": [
       "Mount Sinai",
       "Mount Judi",
@@ -12,7 +12,7 @@
   },
   {
     "question": "Whose generation is known as 'Bani Israeel' in the Qur’an?",
-    "image": "images/main.jpg",
+    "image": "images/general/kaaba.jpg",
     "choices": [
       "Prophet Ibrahim",
       "Prophet Yaqub",
