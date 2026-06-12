@@ -42,6 +42,6 @@ input {
     width: 1018px;
     height: 571px;
     border-radius: 8px;
-    margin: 0 auto 12px auto;
-    display: block;
+    margin-bottom: 12px;
+    outline: 2px solid red;
 }
