@@ -16,5 +16,29 @@
     "image": "images/quran/quran.jpg",
     "choices": ["Umar ibn Al-Khattab", "Zaid bin Harithah", "Ali ibn Abi Talib", "Abu Bakr"],
     "answer": "Zaid bin Harithah"
+  },
+  {
+    "question": "What is the subject matter of the longest verse in the Qur'an? (Hint: 2:282)",
+    "image": "images/quran/quran.jpg",
+    "choices": ["Piety", "Divorce", "Debts and contracts", "Inheritance"],
+    "answer": "Debts and contracts"
+  },
+  {
+    "question": "Surah Al-Anfal (The Spoils of War) was revealed in regards to which battle?",
+    "image": "images/quran/quran.jpg",
+    "choices": ["Battle of Badr", "Conquest of Makkah", "Battle of Uhud", "Battle of Hunayn"],
+    "answer": "Battle of Badr"
+  },
+  {
+    "question": "What is the only surah in the Qur'an that has two places of prostration?",
+    "image": "images/quran/quran.jpg",
+    "choices": ["Surah Al-Anbiya", "Surah Al-Hajj", "Surah Maryam", "Surah As-Sajdah"],
+    "answer": "Surah Al-Hajj"
+  },
+  {
+    "question": "In which surah does Allah mention Ibrahim seeing in a dream that he is to sacrifice his son Ismail?",
+    "image": "images/quran/quran.jpg",
+    "choices": ["Surah Al-Mu'min", "Surah Al-Fath", "Surah Yusuf", "Surah As-Saffat"],
+    "answer": "Surah As-Saffat"
   }
 ]
