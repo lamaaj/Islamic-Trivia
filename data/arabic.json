@@ -2,12 +2,169 @@
   {
     "question": "Which letter is this?",
     "image": "images/arabic/Alif.jpg",
-    "choices": [
-      "Baa",
-      "Kaf",
-      "Alif",
-      "Lam"
-    ],
+    "choices": ["Baa", "Kaf", "Alif", "Lam"],
     "answer": "Alif"
+  },
+  {
+    "question": "Which letter is this?",
+    "image": "images/arabic/Ba.jpg",
+    "choices": ["Baa", "Noon", "Ta", "Fa"],
+    "answer": "Baa"
+  },
+  {
+    "question": "Which letter is this?",
+    "image": "images/arabic/Ta.jpg",
+    "choices": ["Tha", "Seen", "Ta", "Baa"],
+    "answer": "Ta"
+  },
+  {
+    "question": "Which letter is this?",
+    "image": "images/arabic/Tha.jpg",
+    "choices": ["Ta", "Tha", "Seen", "Sheen"],
+    "answer": "Tha"
+  },
+  {
+    "question": "Which letter is this?",
+    "image": "images/arabic/Jeem.jpg",
+    "choices": ["Ha", "Kha", "Ein", "Jeem"],
+    "answer": "Jeem"
+  },
+  {
+    "question": "Which letter is this?",
+    "image": "images/arabic/Ha.jpg",
+    "choices": ["Jeem", "Ha", "Kha", "Ghein"],
+    "answer": "Ha"
+  },
+  {
+    "question": "Which letter is this?",
+    "image": "images/arabic/Kha.jpg",
+    "choices": ["Ha", "Ein", "Kha", "Jeem"],
+    "answer": "Kha"
+  },
+  {
+    "question": "Which letter is this?",
+    "image": "images/arabic/Dal.jpg",
+    "choices": ["Dal", "Dhal", "Ra", "Zay"],
+    "answer": "Dal"
+  },
+  {
+    "question": "Which letter is this?",
+    "image": "images/arabic/Dhal.jpg",
+    "choices": ["Dal", "Ra", "Dhal", "Zay"],
+    "answer": "Dhal"
+  },
+  {
+    "question": "Which letter is this?",
+    "image": "images/arabic/Ra.jpg",
+    "choices": ["Zay", "Dal", "Ra", "Dhal"],
+    "answer": "Ra"
+  },
+  {
+    "question": "Which letter is this?",
+    "image": "images/arabic/Zay.jpg",
+    "choices": ["Ra", "Zay", "Dal", "Waw"],
+    "answer": "Zay"
+  },
+  {
+    "question": "Which letter is this?",
+    "image": "images/arabic/Seen.jpg",
+    "choices": ["Sheen", "Seen", "Saud", "Ta"],
+    "answer": "Seen"
+  },
+  {
+    "question": "Which letter is this?",
+    "image": "images/arabic/Sheen.jpg",
+    "choices": ["Seen", "Saud", "Sheen", "Tha"],
+    "answer": "Sheen"
+  },
+  {
+    "question": "Which letter is this?",
+    "image": "images/arabic/Saud.jpg",
+    "choices": ["Daud", "Seen", "Saud", "Sheen"],
+    "answer": "Saud"
+  },
+  {
+    "question": "Which letter is this?",
+    "image": "images/arabic/Daud.jpg",
+    "choices": ["Saud", "Daud", "Dhal", "Ta"],
+    "answer": "Daud"
+  },
+  {
+    "question": "Which letter is this?",
+    "image": "images/arabic/Tau.jpg",
+    "choices": ["Thau", "Ta", "Daud", "Tau"],
+    "answer": "Tau"
+  },
+  {
+    "question": "Which letter is this?",
+    "image": "images/arabic/Thau.jpg",
+    "choices": ["Tau", "Thau", "Dhal", "Saud"],
+    "answer": "Thau"
+  },
+  {
+    "question": "Which letter is this?",
+    "image": "images/arabic/Ein.jpg",
+    "choices": ["Ghein", "Ha", "Kha", "Ein"],
+    "answer": "Ein"
+  },
+  {
+    "question": "Which letter is this?",
+    "image": "images/arabic/Ghein.jpg",
+    "choices": ["Ein", "Ghein", "Kha", "Fa"],
+    "answer": "Ghein"
+  },
+  {
+    "question": "Which letter is this?",
+    "image": "images/arabic/Fa.jpg",
+    "choices": ["Qaf", "Ghein", "Fa", "Baa"],
+    "answer": "Fa"
+  },
+  {
+    "question": "Which letter is this?",
+    "image": "images/arabic/Qaf.jpg",
+    "choices": ["Fa", "Kaf", "Qaf", "Ghein"],
+    "answer": "Qaf"
+  },
+  {
+    "question": "Which letter is this?",
+    "image": "images/arabic/Kaf.jpg",
+    "choices": ["Qaf", "Lam", "Kaf", "Fa"],
+    "answer": "Kaf"
+  },
+  {
+    "question": "Which letter is this?",
+    "image": "images/arabic/Lam.jpg",
+    "choices": ["Alif", "Kaf", "Noon", "Lam"],
+    "answer": "Lam"
+  },
+  {
+    "question": "Which letter is this?",
+    "image": "images/arabic/Meem.jpg",
+    "choices": ["Noon", "Waw", "Meem", "Ha"],
+    "answer": "Meem"
+  },
+  {
+    "question": "Which letter is this?",
+    "image": "images/arabic/Noon.jpg",
+    "choices": ["Meem", "Noon", "Baa", "Yaa"],
+    "answer": "Noon"
+  },
+  {
+    "question": "Which letter is this?",
+    "image": "images/arabic/ha.jpg",
+    "choices": ["Meem", "Waw", "ha", "Ta"],
+    "answer": "ha"
+  },
+  {
+    "question": "Which letter is this?",
+    "image": "images/arabic/Waw.jpg",
+    "choices": ["Ra", "Yaa", "Noon", "Waw"],
+    "answer": "Waw"
+  },
+  {
+    "question": "Which letter is this?",
+    "image": "images/arabic/Yaa.jpg",
+    "choices": ["Waw", "Noon", "Baa", "Yaa"],
+    "answer": "Yaa"
   }
 ]
