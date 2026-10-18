@@ -5,6 +5,9 @@ let wrongAnswers = [];
 
 const MAX_QUESTIONS = 10;
 
+// How long feedback + references stay on screen before the next question (ms)
+const FEEDBACK_DELAY = 5000;
+
 // --------------------------- Load selected category
 
 async function startGame(category) {
@@ -30,6 +33,9 @@ async function startGame(category) {
     currentQuestion = 0;
     score = 0;
     wrongAnswers = [];
+
+    // Reset the score display for a fresh game
+    document.getElementById("score").textContent = score;
 
     document.getElementById("menu").style.display = "none";
     document.getElementById("menuHeader").style.display = "none";
@@ -72,6 +78,11 @@ function loadQuestion() {
     });
 
     document.getElementById("feedback").textContent = "";
+
+    // Hide references until this question has been answered
+    const references = document.getElementById("references");
+    references.textContent = "";
+    references.style.display = "none";
 }
 
 // --------------------------- Check Answers
@@ -104,6 +115,13 @@ function checkAnswer(selectedAnswer) {
 
     document.getElementById("score").textContent = score;
 
+    // Reveal the references now that feedback has been given
+    if (question.references) {
+        const references = document.getElementById("references");
+        references.textContent = `Reference: ${question.references}`;
+        references.style.display = "block";
+    }
+
     currentQuestion++;
 
     setTimeout(() => {
@@ -114,7 +132,7 @@ function checkAnswer(selectedAnswer) {
             endGame();
         }
 
-    }, 3000);
+    }, FEEDBACK_DELAY);
 }
 
 // --------------------------- End Game
