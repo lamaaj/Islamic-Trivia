@@ -39,6 +39,11 @@ input {
     width: 0%;
     transition: width 0.4s ease;
     }
+#scoreDisplay {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 0 12px;
+}
 #questionImage {
     width: 1018px;
     height: 571px;
@@ -47,4 +52,9 @@ input {
 }
 #questionText {
   font-size: 20px;
+}
+#references {
+    font-size: 16px;
+    font-style: italic;
+    color: #9ca3af;
 }
