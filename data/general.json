@@ -3,48 +3,56 @@
     "question": "Where did Prophet Nuh’s Ark rest after the flood?",
     "image": "images/general/judi.jpg",
     "choices": ["Mount Sinai", "Mount Judi", "Mount Ararat", "Mount Vesuvius"],
-    "answer": "Mount Judi"
+    "answer": "Mount Judi",
+    "references": "Trust me bro"
   },
   {
     "question": "Whose generation is known as 'Bani Israeel' in the Qur’an?",
     "image": "images/general/kaaba.jpg",
     "choices": ["Prophet Ibrahim", "Prophet Yaqub", "Prophet Musa", "Prophet Lut"],
-    "answer": "Prophet Yaqub"
+    "answer": "Prophet Yaqub",
+    "references": "Trust me bro"
   },
   {
     "question": "Which prophet was sent to the people of Al-Hijr?",
     "image": "images/general/sky.jpg",
     "choices": ["Prophet Yunus", "Prophet Saleh", "Prophet Lut", "Prophet Hud"],
-    "answer": "Prophet Saleh"
+    "answer": "Prophet Saleh",
+    "references": "Trust me bro"
   },
   {
     "question": "What is the name of the prophet who could speak to animals?",
     "image": "images/general/sky.jpg",
     "choices": ["Prophet Isa", "Prophet Musa", "Prophet Saleh", "Prophet Sulaiman"],
-    "answer": "Prophet Sulaiman"
+    "answer": "Prophet Sulaiman",
+    "references": "Trust me bro"
   },
   {
     "question": "Who was the 3rd Khalifah after the Prophet Muhammad's death?",
     "image": "images/general/sky.jpg",
     "choices": ["Umar ibn Al-Khattab", "Ali ibn Abi Talib", "Uthman ibn Affan", "Abu Bakr"],
-    "answer": "Uthman ibn Affan"
+    "answer": "Uthman ibn Affan",
+    "references": "Trust me bro"
   },
   {
     "question": "Which prophet was sent to the people of Thamud?",
     "image": "images/general/sky.jpg",
     "choices": ["Prophet Nuh", "Prophet Hud", "Prophet Saleh", "Prophet Sulaiman"],
-    "answer": "Prophet Saleh"
+    "answer": "Prophet Saleh",
+    "references": "Trust me bro"
   },
   {
     "question": "What is the name of Prophet Muhammad's father?",
     "image": "images/general/sky.jpg",
     "choices": ["Hashim", "Abdullah", "Abd Manaf", "Abdul Muttalib"],
-    "answer": "Abdullah"
+    "answer": "Abdullah",
+    "references": "Trust me bro"
   },
   {
     "question": "Which battle was led by Prophet Muhammad during the month of Ramadan?",
     "image": "images/general/sky.jpg",
     "choices": ["Battle of Badr", "Battle of the Trench", "Battle of Uhud", "Battle of Hunayn"],
-    "answer": "Battle of Badr"
+    "answer": "Battle of Badr",
+    "references": "Trust me bro"
   }
 ]
