@@ -114,7 +114,7 @@ function checkAnswer(selectedAnswer) {
             endGame();
         }
 
-    }, 1500);
+    }, 3000);
 }
 
 // --------------------------- End Game
