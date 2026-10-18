@@ -3,42 +3,49 @@
     "question": "How old was Prophet Muhammad when the Qur’an was first revealed to him?",
     "image": "images/quran/quran.jpg",
     "choices": ["40 years old", "34 years old", "37 years old", "31 years old"],
-    "answer": "40 years old"
+    "answer": "40 years old",
+    "references": "Trust me bro"
   },
   {
     "question": "Which prophet’s story is mentioned most in the Qur’an?",
     "image": "images/quran/quran.jpg",
     "choices": ["Prophet Mūsā", "Prophet Isa", "Prophet Yusuf", "Prophet Ibrahim"],
-    "answer": "Prophet Mūsā"
+    "answer": "Prophet Mūsā",
+    "references": "Trust me bro"
   },
   {
     "question": "Only one of the Companions was mentioned by name in the Qur’an. What was his name?",
     "image": "images/quran/quran.jpg",
     "choices": ["Umar ibn Al-Khattab", "Zaid bin Harithah", "Ali ibn Abi Talib", "Abu Bakr"],
-    "answer": "Zaid bin Harithah"
+    "answer": "Zaid bin Harithah",
+    "references": "Trust me bro"
   },
   {
     "question": "What is the subject matter of the longest verse in the Qur'an? (Hint: 2:282)",
     "image": "images/quran/quran.jpg",
     "choices": ["Piety", "Divorce", "Debts and contracts", "Inheritance"],
-    "answer": "Debts and contracts"
+    "answer": "Debts and contracts",
+    "references": "Trust me bro"
   },
   {
     "question": "Surah Al-Anfal (The Spoils of War) was revealed in regards to which battle?",
     "image": "images/quran/quran.jpg",
     "choices": ["Battle of Badr", "Conquest of Makkah", "Battle of Uhud", "Battle of Hunayn"],
-    "answer": "Battle of Badr"
+    "answer": "Battle of Badr",
+    "references": "Trust me bro"
   },
   {
     "question": "What is the only surah in the Qur'an that has two places of prostration?",
     "image": "images/quran/quran.jpg",
     "choices": ["Surah Al-Anbiya", "Surah Al-Hajj", "Surah Maryam", "Surah As-Sajdah"],
-    "answer": "Surah Al-Hajj"
+    "answer": "Surah Al-Hajj",
+    "references": "Trust me bro"
   },
   {
     "question": "In which surah does Allah mention Ibrahim seeing in a dream that he is to sacrifice his son Ismail?",
     "image": "images/quran/quran.jpg",
     "choices": ["Surah Al-Mu'min", "Surah Al-Fath", "Surah Yusuf", "Surah As-Saffat"],
-    "answer": "Surah As-Saffat"
+    "answer": "Surah As-Saffat",
+    "references": "Trust me bro"
   }
 ]
